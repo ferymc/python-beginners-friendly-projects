@@ -16,7 +16,7 @@ while True:
     while True:
 
         try:
-            guess = int(input("Guess the number (1..100): "))
+            guess = int(input("Guess the number (1...100): "))
 
         except ValueError:
             print("Please enter a valid number.")
