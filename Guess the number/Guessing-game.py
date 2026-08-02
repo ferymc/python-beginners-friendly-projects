@@ -42,4 +42,6 @@ while True:
 
     again = input("Do you want to play again? (y/n): ").strip().lower()
 
-    
+    if again != "y":
+        break
+
