@@ -38,10 +38,10 @@ while True:
             break
 
         if guess > secret_number:
-            print(f"Try a smaller number. (only {5 - attempts} chance left!)")
+            print(f"Try a smaller number. (only {5 - attempts} chances left!)")
 
         else:
-            print(f"Try a bigger number. (only {5 - attempts} chance left!)")
+            print(f"Try a bigger number. (only {5 - attempts} chances left!)")
 
     # Question to continue the game by removing spaces and making the letters smaller
     again = input("Do you want to play again? (y/n): ").strip().lower()
