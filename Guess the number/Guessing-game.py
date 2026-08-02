@@ -30,9 +30,11 @@ while True:
 
         if guess == secret_number:
             print(Fore.GREEN + "Correct! you won.")
+            break
 
         if attempts == 5:
             print(Fore.RED + f"Oops! you lose... the secret number was {secret_number}")
+            break
 
         if guess > secret_number:
             print(f"It's smaller (only {5 - attempts} chance left!)")
@@ -44,4 +46,3 @@ while True:
 
     if again != "y":
         break
-
