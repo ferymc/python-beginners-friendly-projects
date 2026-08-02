@@ -13,4 +13,18 @@ while True:
     attempts = 0
     secret_number = random.randint(1, 100)
 
-    
+    while True:
+
+        try:
+            guess = int(input("Guess the number (1..100): "))
+
+        except ValueError:
+            print("Please enter a valid number.")
+            continue
+
+        if guess < 1 or guess > 100:
+            print("Please enter a number between 1 and 100.")
+            continue
+
+        attempts += 1
+        
