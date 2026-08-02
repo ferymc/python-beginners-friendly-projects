@@ -39,3 +39,7 @@ while True:
 
         else:
             print(f"It's bigger (only {5 - attempts} chance left!)")
+
+    again = input("Do you want to play again? (y/n): ").strip().lower()
+
+    
