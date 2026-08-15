@@ -19,7 +19,7 @@ def analyze_students(
     average = {}
 
     for student, lessons in grade.items():
-        average[student] = sum(lessons.values()) / len(student)
+        average[student] = sum(lessons.values()) / len(lessons)
 
     best_student = max(average, key=average.get)
     worst_student = min(average, key=average.get)
@@ -38,7 +38,6 @@ if __name__ == "__main__":
     }
     best, worst, grade_list = analyze_students(students)
 
-
-print(f"Best student is: {best}")
-print(f"Worst student is: {worst}")
-print(f"Grade list: {grade_list}")
+    print(f"Best student is: {best}")
+    print(f"Worst student is: {worst}")
+    print(f"Grade list: {grade_list}")
