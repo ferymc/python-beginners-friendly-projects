@@ -8,7 +8,7 @@ def analyze_students(
     if not grade:
         raise ValueError("Data cannot be empty!")
 
-    for name, lessons in grade.values():
+    for name, lessons in grade.items():
 
         if not lessons:
             raise ValueError(f"no grade found for student {name}")
@@ -19,7 +19,7 @@ def analyze_students(
     average = {}
 
     for student, lessons in grade.items():
-        average[student] = sum(student.values()) / len(student)
+        average[student] = sum(lessons.values()) / len(student)
 
     best_student = max(average, key=average.get)
     worst_student = min(average, key=average.get)
