@@ -13,7 +13,7 @@ def analyze_students(
         if not lessons:
             raise ValueError(f"no grade found for student {name}")
 
-        if any(value is None for value in lessons.values()):
+        if any(not isinstance(value, (int, float)) for value in lessons.values()):
             raise ValueError(f"invalid grade detected for student {name}")
 
     average = {}
