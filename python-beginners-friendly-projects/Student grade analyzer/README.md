@@ -18,6 +18,3 @@ A simple Python tool to analyze student grades, calculate averages, and identify
 ```bash
 python student_analyzer.py
 ```
-
-
-just test
